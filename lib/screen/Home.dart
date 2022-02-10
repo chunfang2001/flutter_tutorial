@@ -69,7 +69,9 @@ class _HomeState extends State<Home> {
         currentIndex: index,
         selectedItemColor: Colors.black,
         onTap: (value){
-          print(value);
+          setState(() {
+            index = value;
+          });
         },
       ),
     );
